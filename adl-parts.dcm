@@ -1,0 +1,25 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP C
+D Nonpolarized capacitor
+$ENDCMP
+#
+$CMP IVC102
+D Precision switched integrator transimpedance amplifier
+K transimpedance, photodiode, precision, chopped, integrator, burr-brown
+F http://www.ti.com/lit/gpn/ivc102
+$ENDCMP
+#
+$CMP MAX3311
+D 460 kbps, 1 μA supply current, rs-232 compatible transeiver.
+K rs-232, charge pump, transeiver
+F http://datasheets.maximintegrated.com/en/ds/MAX3311-MAX3313.pdf
+$ENDCMP
+#
+$CMP MAX3313
+D 460 kbps, 1 μA supply current, rs-232 compatible transeiver.
+K rs-232, charge pump, transeiver
+F http://datasheets.maximintegrated.com/en/ds/MAX3311-MAX3313.pdf
+$ENDCMP
+#
+#End Doc Library

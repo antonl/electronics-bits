@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>C:/Users/aloukian/Documents/git/electronics_bits/photodiode-amplifier/pd-amplifier.sch</source>
+    <date>10/18/2014 8:52:56 PM</date>
+    <tool>Eeschema (2014-10-09 BZR 5173)-product</tool>
+  </design>
+  <components>
+    <comp ref="U1">
+      <value>IVC102</value>
+      <libsource lib="adl-parts" part="IVC102"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5441340D</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>0.1 μF</value>
+      <libsource lib="adl-parts" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>544136B5</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>0.1 μF</value>
+      <libsource lib="adl-parts" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>54413C6E</tstamp>
+    </comp>
+    <comp ref="C5">
+      <value>C</value>
+      <libsource lib="adl-parts" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>54417A62</tstamp>
+    </comp>
+    <comp ref="C4">
+      <value>C</value>
+      <libsource lib="adl-parts" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>54417A8B</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>C</value>
+      <libsource lib="adl-parts" part="C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>54417AB4</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>COAX_JACK</value>
+      <libsource lib="adl-parts" part="COAX_JACK"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>54419066</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>10R</value>
+      <libsource lib="adl-parts" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5441914C</tstamp>
+    </comp>
+    <comp ref="J2">
+      <value>COAX_JACK</value>
+      <libsource lib="adl-parts" part="COAX_JACK"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>54419932</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>10R</value>
+      <libsource lib="adl-parts" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>54419A9E</tstamp>
+    </comp>
+    <comp ref="J3">
+      <value>COAX_JACK</value>
+      <libsource lib="adl-parts" part="COAX_JACK"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5441A894</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="adl-parts" part="C">
+      <description>Nonpolarized capacitor</description>
+      <footprints>
+        <fp>SM*</fp>
+        <fp>C?</fp>
+        <fp>C1-1</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="adl-parts" part="COAX_JACK">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">COAX_JACK</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="adl-parts" part="IVC102">
+      <description>Precision switched integrator transimpedance amplifier</description>
+      <docs>http://www.ti.com/lit/gpn/ivc102</docs>
+      <footprints>
+        <fp>SO-14</fp>
+        <fp>DIP-14</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">IVC102</field>
+      </fields>
+      <pins>
+        <pin num="1" name="AGND" type="passive"/>
+        <pin num="2" name="I_in" type="passive"/>
+        <pin num="3" name="⁻In" type="passive"/>
+        <pin num="4" name="C₁" type="passive"/>
+        <pin num="5" name="C₂" type="passive"/>
+        <pin num="6" name="C₃" type="passive"/>
+        <pin num="9" name="V⁻" type="passive"/>
+        <pin num="10" name="Vo" type="passive"/>
+        <pin num="11" name="S₁" type="input"/>
+        <pin num="12" name="S₂" type="input"/>
+        <pin num="13" name="DGND" type="passive"/>
+        <pin num="14" name="V⁺" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="adl-parts" part="R">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="adl-parts">
+      <uri>C:\Users\aloukian\Documents\git\electronics_bits\adl-parts.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Net-(J1-Pad2)">
+      <node ref="R1" pin="1"/>
+      <node ref="J1" pin="2"/>
+    </net>
+    <net code="2" name="/PD_IN">
+      <node ref="U1" pin="3"/>
+      <node ref="J1" pin="1"/>
+    </net>
+    <net code="3" name="Net-(C3-Pad1)">
+      <node ref="C3" pin="2"/>
+      <node ref="C3" pin="1"/>
+      <node ref="C5" pin="1"/>
+      <node ref="C5" pin="2"/>
+      <node ref="C4" pin="1"/>
+      <node ref="U1" pin="6"/>
+      <node ref="U1" pin="5"/>
+      <node ref="U1" pin="4"/>
+    </net>
+    <net code="4" name="DGND">
+      <node ref="U1" pin="13"/>
+      <node ref="U1" pin="11"/>
+      <node ref="J3" pin="2"/>
+    </net>
+    <net code="5" name="/RESET">
+      <node ref="U1" pin="12"/>
+      <node ref="J3" pin="1"/>
+    </net>
+    <net code="6" name="Net-(C4-Pad2)">
+      <node ref="C4" pin="2"/>
+    </net>
+    <net code="7" name="/SIGNAL">
+      <node ref="U1" pin="10"/>
+      <node ref="J2" pin="1"/>
+    </net>
+    <net code="8" name="Net-(J2-Pad2)">
+      <node ref="J2" pin="2"/>
+      <node ref="R4" pin="1"/>
+    </net>
+    <net code="9" name="AGND">
+      <node ref="U1" pin="1"/>
+      <node ref="C2" pin="1"/>
+      <node ref="U1" pin="2"/>
+      <node ref="R1" pin="2"/>
+      <node ref="R4" pin="2"/>
+      <node ref="C1" pin="2"/>
+    </net>
+    <net code="10" name="+15V">
+      <node ref="U1" pin="14"/>
+    </net>
+    <net code="11" name="Net-(C1-Pad1)">
+      <node ref="C1" pin="1"/>
+    </net>
+    <net code="12" name="-15V">
+      <node ref="C2" pin="2"/>
+      <node ref="U1" pin="9"/>
+    </net>
+  </nets>
+</export>
