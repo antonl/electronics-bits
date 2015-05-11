@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0  Date: 6/4/2014 7:34:28 PM
+#
+$CMP HIH6021
+D Honeywell 6000 Series humidity/temperature sensor with I2C/SPI interface
+K humidity, sensor, honeywell 
+$ENDCMP
+#
+#End Doc Library
